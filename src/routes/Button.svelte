@@ -10,7 +10,7 @@
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({
-			string_input: 'marysa'
+			string_input: package_name
 		})
 		});
 
