@@ -163,7 +163,7 @@ $: if (result) {
 
     input[type=text] {
         border: 3px solid var(--color-theme-1);
-        border-radius: 5px;
+        border-radius: 10px;
         height: 50px;
         line-height: normal;
         color: var(--color-theme-3);
@@ -176,6 +176,11 @@ $: if (result) {
         padding-left: 12px;
     }
 
+    input[type=text]:focus {
+        border: 3px solid var(--color-theme-3);
+        outline: none;
+    }
+
     input[type="submit"] {
         display: inline-block;
         outline: 0;
@@ -183,13 +188,14 @@ $: if (result) {
         cursor: pointer;
         background: var(--color-theme-1);
         color: var(--color-theme-2);
-        border-radius: 8px;
+        border-radius: 10px;
         padding: 14px 24px 16px;
         font-size: 18px;
         font-weight: 700;
         line-height: 1;
         transition: transform 200ms,background 200ms;
         width: 28%;
+        opacity:0.9;
     }
 
     input[type="submit"]:hover {
@@ -201,8 +207,8 @@ $: if (result) {
         margin: 0;
         padding: 0;
         top: 0;
-        width: 70%;
-        border: 3px solid var(--color-theme-1);
+        width: 71%;
+
     }
 
 </style>

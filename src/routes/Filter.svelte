@@ -7,7 +7,6 @@
 <style>
     button.autocomplete-items {
         border: none;
-        border-bottom: 1px solid var(--color-theme-2);
         z-index: 99;
         width: 100%;
         padding: 10px;
@@ -16,6 +15,7 @@
         color: var(--color-theme-3);
         text-align: left;
         outline: none;
+        border-radius: 10px;
     }
 
     button.autocomplete-items:hover {
@@ -27,7 +27,7 @@
     button.autocomplete-items:active,
     .autocomplete-active {
         /*when navigating through the items using the arrow keys:*/
-        background-color: DodgerBlue !important;
+        background-color: #ff412b !important;
         color: #ffffff;
     }
 </style>

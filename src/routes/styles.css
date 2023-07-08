@@ -17,6 +17,10 @@
 	color: var(--color-text);
 }
 
+::selection {
+    background: var(--color-theme-1);
+}
+
 body {
     min-height: 100vh;
 	margin: 0;
