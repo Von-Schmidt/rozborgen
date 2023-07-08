@@ -1,0 +1,1 @@
+export const filters = ["Marysa","Nasi furianti","Europeana","Zlocin a trest","1984","Farma zvirat","Romance pro kridlovku","Ostre sledovane vlaky","O mysich a lidech","Sbohem armado"]

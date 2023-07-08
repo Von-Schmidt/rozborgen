@@ -1,0 +1,35 @@
+<script>
+    export let itemLabel;
+    export let highlighted;
+    import './styles.css';
+</script>
+
+<style>
+    button.autocomplete-items {
+        border: none;
+        border-bottom: 1px solid var(--color-theme-2);
+        z-index: 99;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: var(--color-theme-2);
+        color: var(--color-theme-3);
+        text-align: left;
+        outline: none;
+    }
+
+    button.autocomplete-items:hover {
+        /*when hovering an item:*/
+        background-color: var(--color-theme-1);
+        color: white;
+    }
+
+    button.autocomplete-items:active,
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+</style>
+
+<button class="autocomplete-items" class:autocomplete-active={highlighted} on:click>{@html itemLabel}</button>
