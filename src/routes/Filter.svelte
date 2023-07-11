@@ -6,6 +6,7 @@
 
 <style>
     button.autocomplete-items {
+        position: absolute;
         border: none;
         z-index: 99;
         width: 100%;
@@ -16,6 +17,7 @@
         text-align: left;
         outline: none;
         border-radius: 10px;
+        box-sizing: border-box;
     }
 
     button.autocomplete-items:hover {
@@ -30,6 +32,13 @@
         background-color: #ff412b !important;
         color: #ffffff;
     }
+
+    button.autocomplete-container {
+        position: relative;
+        width: 100%;
+    }
 </style>
 
-<button class="autocomplete-items" class:autocomplete-active={highlighted} on:click>{@html itemLabel}</button>
+<div class="autocomplete-container">
+    <button class="autocomplete-items" class:autocomplete-active={highlighted} on:click>{@html itemLabel}</button>
+</div>
