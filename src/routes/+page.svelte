@@ -1,5 +1,6 @@
 <script>
     import App from './App.svelte';
+    import Explanation from './Explanation.svelte';
 </script>
 
 <svelte:head>
@@ -9,6 +10,7 @@
 
 <section>
     <App />
+    <Explanation />
 </section>
 
 <style>

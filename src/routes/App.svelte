@@ -2,7 +2,7 @@
     import { filters } from './filtersData.js';
     import Filter from './Filter.svelte';
     import './styles.css';
-        
+    import { resultglobal } from './stores.js';
         
     let filteredWords = [];
     
@@ -99,10 +99,12 @@ async function callAPI() {
     } else {
     const data = await response.json();
     result = data.result;
+
     }
 }
 
 $: if (result) {
+    resultglobal.set(result);
     alert(result);
 }
 </script>
