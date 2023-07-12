@@ -6,7 +6,9 @@
 
 <header>
     <div>
+        <a href="/">
         <img src={rozborgenpeach} alt="logo">
+        </a>
     </div>
 </header>
 
