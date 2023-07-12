@@ -8,12 +8,6 @@
 
 	<main>
 		<slot />
-		<div class="explanationwrapper">
-			<div class="explanation">
-				<p class="explanationtext">Zadejte název díla, pro který chcete vygenerovat rozbor, pokud se vám dílo nenabídne při doplňování, nebylo ještě zpracováno.</p>
-			</div>
-		</div>
-
 	</main>
 
 	<footer>
@@ -37,28 +31,6 @@
         margin: 1rem;
         box-sizing: border-box;
     }
-
-	.explanation {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-        max-width: 30rem;
-        margin: 0 auto;
-		flex-direction: column;
-	}
-
-	.explanationtext {
-		font-weight: bold;
-		color: var(--color-theme-1);
-		word-wrap: break-word;
-		width: 100%;
-		text-align: center;
-	}
-
-	.explanationwrapper {
-		display: flex;
-		justify-content: center;
-	}
 
     footer {
 		display: flex;
