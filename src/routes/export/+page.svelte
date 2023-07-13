@@ -1,5 +1,8 @@
 <script>
     import { resultglobal } from '../stores';
+
+    $: console.log($resultglobal);
 </script> 
 
-<p>{$resultglobal}</p>
+
+<p>{@html $resultglobal}</p>

@@ -3,6 +3,7 @@
     import Filter from './Filter.svelte';
     import './styles.css';
     import { resultglobal } from './stores.js';
+	import { goto } from '$app/navigation';
         
     let filteredWords = [];
     
@@ -80,7 +81,10 @@ const navigateList = (e) => {
 } 
 
 let result = '';
-  
+let globalResultValue;
+resultglobal.subscribe(value => {
+    globalResultValue = value;
+});
 
 async function callAPI() {
     const response = await fetch('http://localhost:5000/api', {
@@ -105,7 +109,7 @@ async function callAPI() {
 
 $: if (result) {
     resultglobal.set(result);
-    alert(result);
+    goto('/export');
 }
 </script>
 
