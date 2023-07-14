@@ -49,3 +49,25 @@ a:hover {
 	text-decoration: underline;
 }
 
+.explanation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 30rem;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+.explanationtext {
+	font-weight: bold;
+	color: var(--color-theme-1);
+	word-wrap: break-word;
+	width: 100%;
+	text-align: center;
+}
+
+.explanationwrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}
