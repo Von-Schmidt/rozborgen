@@ -16,6 +16,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0-next.90",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.0.0-next.587",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -30,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@svelte-web-fonts/google": "^1.0.4"
+		"@svelte-web-fonts/google": "^1.0.4",
+		"firebase": "^10.0.0"
 	}
 }
